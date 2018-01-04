@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: serviceregistry
+    
+server:
+  port: ${PORT:8761}
+
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: ${EUREKA_ZONE:http://127.0.0.1:8761/eureka/}    
+  server:
+      waitTimeInMsWhenSyncEmpty: 0  
+
+logging:
+  level:
+    com:
+      netflix:
+        eureka: OFF
+        discovery: OFF
+              
