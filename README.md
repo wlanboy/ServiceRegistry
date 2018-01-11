@@ -26,3 +26,6 @@ docker build -t serviceregistry:latest . --build-arg JAR_FILE=./target/ServiceRe
 
 ## Docker run
 docker run --name serviceregistry -m 512M -d -p 8761:8761 -v /tmp:/tmp -e EUREKA_ZONE=$EUREKA_ZONE serviceregistry:latest
+
+## Check Service Registry
+http://127.0.0.1:8761/
