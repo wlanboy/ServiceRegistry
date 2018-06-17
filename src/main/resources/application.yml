@@ -7,7 +7,7 @@ server:
 
 eureka:
   client:
-    registerWithEureka: false
+    registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
       defaultZone: ${EUREKA_ZONE:http://127.0.0.1:8761/eureka/}    
