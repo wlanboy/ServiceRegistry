@@ -7,12 +7,14 @@ server:
 
 eureka:
   client:
-    registerWithEureka: true
+    registerWithEureka: false
     fetchRegistry: true
     serviceUrl:
       defaultZone: ${EUREKAZONE:http://127.0.0.1:8761/eureka/}    
   server:
-      waitTimeInMsWhenSyncEmpty: 0  
+      waitTimeInMsWhenSyncEmpty: 0
+  instance:
+      hostname: ${EUREKAHOST}
 
 logging:
   level:
