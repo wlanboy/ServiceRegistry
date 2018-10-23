@@ -12,6 +12,7 @@
       <outputDirectory></outputDirectory>
       <includes>
         <include>manifest.json</include>
+        <include>ServiceRegistry-0.0.1-SNAPSHOT.conf</include>
       </includes>
     </fileSet>
     <fileSet>
