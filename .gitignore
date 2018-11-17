@@ -11,8 +11,7 @@ buildNumber.properties
 # Avoid ignoring Maven wrapper jar file (.jar files are usually ignored)
 !/.mvn/wrapper/maven-wrapper.jar
 registry.log
-.settings/org.eclipse.core.resources.prefs
-.settings/org.eclipse.jdt.core.prefs
-.settings/org.eclipse.m2e.core.prefs
+.settings/
 .vscode/settings.json
-.sts4-cache/classpath-data.json
+.sts4-cache/
+
