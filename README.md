@@ -16,13 +16,13 @@ Default value: http://127.0.0.1:8761/eureka/
 Defining all available Eureka Instances.
 
 ### Windows
-java -jar target\ServiceRegistry-0.1.1-SNAPSHOT.jar
+java -jar target\serviceregistry-0.1.1-SNAPSHOT.jar
 
 ### Linux (service enabled)
-./target/ServiceRegistry-0.1.1-SNAPSHOT.jar start
+./target/serviceregistry-0.1.1-SNAPSHOT.jar start
 
 ## Docker build
-docker build -t serviceregistry:latest . --build-arg JAR_FILE=./target/ServiceRegistry-0.1.1-SNAPSHOT.jar
+docker build -t serviceregistry:latest . --build-arg JAR_FILE=./target/serviceregistry-0.1.1-SNAPSHOT.jar
 
 ## Docker run
 export DOCKERHOST=192.168.0.100

@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.wlanboy</groupId>
-	<artifactId>ServiceRegistry</artifactId>
+	<artifactId>serviceregistry</artifactId>
 	<version>0.1.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
@@ -96,6 +96,7 @@
 				<executions>
 				<execution>
 					<id>default</id>
+					<phase>package</phase>
 					<goals>
 					<goal>build</goal>
 					</goals>
