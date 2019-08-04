@@ -1,4 +1,4 @@
-# ServiceRegistry [DEPRICATED]
+# ServiceRegistry [DEPRECATED]
 Spring Framework based Service Registry - DO NOT USE THIS ANY LONGER
 
 Based on https://projects.spring.io/spring-cloud/ and https://github.com/spring-cloud-samples/eureka.
