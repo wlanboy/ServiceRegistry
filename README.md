@@ -29,5 +29,8 @@ docker build -t serviceregistry:latest . --build-arg JAR_FILE=./target/servicere
 ## Docker run
 docker run --name serviceregistry -m 512M -d -p 8761:8761 -v /tmp:/tmp -e DOCKERHOST=$DOCKERHOST -e EUREKA_ZONE=http://$DOCKERHOST:8761/eureka/ serviceregistry:latest
 
+## Docher Hub
+https://hub.docker.com/repository/docker/wlanboy/serviceregistry
+
 ## Check Service Registry
 http://127.0.0.1:8761/
