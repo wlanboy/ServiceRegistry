@@ -4,7 +4,7 @@ Spring Framework based Service Registry - DO NOT USE THIS ANY LONGER
 Based on https://projects.spring.io/spring-cloud/ and https://github.com/spring-cloud-samples/eureka.
 
 ## Dependencies
-At least: Java 11 and Maven 3.5
+At least: Java 25 and Maven 3.9
 
 ## Build Service Registry
 mvn package -DskipTests=true
@@ -24,7 +24,7 @@ java -jar target\serviceregistry-0.1.1-SNAPSHOT.jar
 ./target/serviceregistry-0.1.1-SNAPSHOT.jar start
 
 ## Docker build
-docker build -t serviceregistry:latest . --build-arg JAR_FILE=./target/serviceregistry-0.1.1-SNAPSHOT.jar
+docker build -t serviceregistry:latest .
 
 ## Docker run
 docker run --name serviceregistry -m 512M -d -p 8761:8761 -v /tmp:/tmp -e DOCKERHOST=$DOCKERHOST -e EUREKA_ZONE=http://$DOCKERHOST:8761/eureka/ serviceregistry:latest
