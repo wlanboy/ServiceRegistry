@@ -1,4 +1,5 @@
 target/
+bin/
 pom.xml.tag
 pom.xml.releaseBackup
 pom.xml.versionsBackup
@@ -14,4 +15,4 @@ registry.log
 .settings/
 .vscode/settings.json
 .sts4-cache/
-
+.project
